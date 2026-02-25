@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("-------Welcome To Table World--------");
+        System.out.println("Enter Your Desired Number : ");
+        int num = sc.nextInt();
+        printmulti(num);
+        sc.close();
+        }
+    public static void printmulti(int num){
+             int i = 1;
+        while (i<=10){
+            System.out.println(num + "X" + i + "=" + (num*i));
+            i++;
+        }
+        
+      }
+}
