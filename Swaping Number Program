@@ -1,0 +1,22 @@
+
+// Swaping Number Program
+
+import java.util.Scanner;
+class Swap{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("-------Welcome To Swaping Section------");
+        System.out.println("Enter Your First Number :");
+        int a = sc.nextInt();
+        System.out.println("Enter Your Second Number :");
+        int b = sc.nextInt();
+        int c = a;
+         a = b;
+         b = c;
+        System.out.println("------Following are the swapped Numbers----------");
+        System.out.println("Your First Swapped Number of :" +a);
+        System.out.println("Your Second Swapped Number :"+b);
+    
+    }
+}
+
