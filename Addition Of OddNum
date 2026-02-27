@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class OddSum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("--Welcome To Odd Number Sum------");
+        System.out.println("Please Enter Your Number :")
+;        int num = sc.nextInt();
+        int sum = oddNum(num);
+        System.out.println("Your Odd Number Till " + num + " Is " + sum);
+    }
+    
+    public static int oddNum(int num){
+         int i = 1;
+         int sum = 0;
+      while (i<=num){
+          
+          sum+=i;
+          i+=2;
+       }
+       return sum;
+     }
+}
