@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Fact {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("--Welcome To Find Factoral------");
+        System.out.println("Please Enter Your Number :");
+        int num = sc.nextInt();
+        long fact = findFact(num);
+        System.out.println("Your Factorial Number : " + fact );
+    }
+    
+    public static long findFact(int num){
+        if (num < 2){
+            return 1;
+        }
+         long fact = 1;
+         int i = 2;
+         while (i<=num){
+             fact*=i;
+             i++;
+         }
+          return fact;
+       }
+}
